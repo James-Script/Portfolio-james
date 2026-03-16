@@ -24,7 +24,7 @@ export default function Hamburg() {
       {/* botão */}
       <div className="flex md:hidden justify-end w-full relative z-[70]">
         <button onClick={() => setOpen(!open)} className="cursor-pointer mr-4">
-          {open ? <X className="text-black" size={30} /> : <Menu size={30} />}
+          {open ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>
 
@@ -50,7 +50,7 @@ export default function Hamburg() {
 
         <nav className="flex flex-col items-center gap-6 ml-[-16] mt-12">
           <Link
-            href="#"
+            href={'/'}
             className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
@@ -58,7 +58,7 @@ export default function Hamburg() {
           </Link>
 
           <Link
-            href="#"
+            href="/sobre"
             className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
@@ -66,19 +66,21 @@ export default function Hamburg() {
           </Link>
 
           <Link
-            href="#"
+            href="/projetos"
             className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
             Projetos
           </Link>
 
+           <Link href={'/contato'}>
           <button
-            className="mt-8 w-[85%] rounded-3xl bg-[#fff8cd] ml-[16] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
+            className="cursor-pointer mt-8 w-[85%] rounded-3xl bg-[#fff8cd] ml-[16] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
             Contato
           </button>
+          </Link> 
         </nav>
       </div>
     </>

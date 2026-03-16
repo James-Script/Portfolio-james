@@ -22,8 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${montserrat.variable} antialiased`}
-      >
+        className={`${montserrat.variable} antialiased`}>
         <div className="flex items-center justify-center bg-zinc-50 font-sans dark:bg-black"><Header /></div>
         {children}
       </body>
