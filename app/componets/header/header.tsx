@@ -10,12 +10,12 @@ export default function Header(){
             <Link href="/" className=""><Image className="p-4 " src="/jl.png" alt="Logo" width={100} height={70}/></Link>
         <nav className="md:grid grid-cols-[1fr_2px] justify-center mr-[66px] items-center gap-20 hidden ">
           <div className="flex justify-center gap-30">
-          <Link href="http://localhost:3000/" className="hover:text-[#ff751f]">Início</Link>
-          <Link href="http://localhost:3000/sobre" className="hover:text-[#ff751f]">Sobre</Link>
-          <Link href="/projetos" className="hover:text-[#ff751f]">Projetos</Link>
+          <Link href="http://localhost:3000/" className="transition-all duration-300 hover:text-[#ff751f]">Início</Link>
+          <Link href="http://localhost:3000/sobre" className="transition-all duration-300 hover:text-[#ff751f]">Sobre</Link>
+          <Link href="/projetos" className="transition-all duration-300 hover:text-[#ff751f]">Projetos</Link>
           </div>    
            
-          <div className="cursor-pointer bg-white w-24 py-[1.8] hover:bg-[#ff751f] hover:text-white rounded-3xl text-center text-black ml-[-50]"><Link href={'/contato'}><button className="cursor-pointer">Contato</button></Link></div>
+          <div className="cursor-pointer transition-all duration-300 bg-white w-24 py-[1.8] hover:bg-[#ff751f] hover:text-white rounded-3xl text-center text-black ml-[-50]"><Link href={'/contato'}><button className="cursor-pointer">Contato</button></Link></div>
 
      </nav>
                 
