@@ -1,29 +1,68 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import Hamburg from "./hamburg";
+import { usePathname } from "next/navigation";
 
-export default function Header(){
-    return(
-        //header desktop
-            
-        <div className="grid grid-cols-[66px_1fr] items-center w-screen max-w-[1080px] ">
-            <Link href="/" className=""><Image className="p-4 " src="/jl.png" alt="Logo" width={100} height={70}/></Link>
-        <nav className="md:grid grid-cols-[1fr_2px] justify-center mr-[66px] items-center gap-20 hidden ">
-          <div className="flex justify-center gap-30">
-          <Link href="http://localhost:3000/" className="transition-all duration-300 hover:text-[#ff751f]">Início</Link>
-          <Link href="http://localhost:3000/sobre" className="transition-all duration-300 hover:text-[#ff751f]">Sobre</Link>
-          <Link href="/projetos" className="transition-all duration-300 hover:text-[#ff751f]">Projetos</Link>
-          </div>    
-           
-          <div className="cursor-pointer transition-all duration-300 bg-white w-24 py-[1.8] hover:bg-[#ff751f] hover:text-white rounded-3xl text-center text-black ml-[-50]"><Link href={'/contato'}><button className="cursor-pointer">Contato</button></Link></div>
+export default function Header() {
+    const pathname = usePathname();
 
-     </nav>
-                
-        {/* header mobile */}
-        <div className="">
-            <Hamburg />
+  return (
+    <header className="w-full bg-black">
+      <div className="mx-auto flex h-16 w-full max-w-[1080px] items-center justify-between px-4">
+        <Link href="/">
+          <Image
+            className="h-auto w-auto"
+            src="/jl.png"
+            alt="Logo"
+            width={40}
+            height={40}
+          />
+        </Link>
+
+        <nav className="hidden items-center gap-10 md:flex">
+          <div className="flex items-center gap-8 ">
+            <Link
+              href="/"
+              className={`transition-all duration-300 border-b-2 py-3
+            ${pathname === "/"
+            ? "text-[#ff751f] border-[#ff751f]"
+                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+            >
+              Início
+            </Link>
+            <Link
+              href="/sobre"
+              className={`transition-all duration-300 border-b-2 py-3
+            ${pathname === "/sobre" ? "text-[#ff751f] border-[#ff751f]" 
+                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+            >
+              Sobre
+            </Link>
+            <Link
+              href="/projetos"
+              className={`transition-all duration-300 border-b-2 py-3
+                ${pathname === "/projetos"
+                ? "text-[#ff751f] border-[#ff751f]"
+                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+            >
+              Projetos
+            </Link>
+          </div>
+
+          <Link
+            href="/contato"
+            className="rounded-3xl bg-white px-6 py-2 text-center text-black transition-all duration-300 hover:bg-[#ff751f] hover:text-white"
+          >
+            Contato
+          </Link>
+        </nav>
+
+        <div className="md:hidden">
+          <Hamburg />
         </div>
       </div>
-    )
-
+    </header>
+  );
 }

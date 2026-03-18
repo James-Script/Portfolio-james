@@ -38,7 +38,7 @@ export default function Hamburg() {
 
       {/* sidebar */}
       <div
-        className={`fixed top-0 right-0 h-screen w-50 bg-[#f06d05] z-[60] md:hidden
+        className={`fixed top-0 right-[-1] h-screen w-[250px] bg-[#f06d05] z-[60] md:hidden
         transition-transform duration-300 ease-in-out
         ${open ? "translate-x-0" : "translate-x-full"}`}
       >
@@ -48,10 +48,10 @@ export default function Hamburg() {
           </button>
         </div>
 
-        <nav className="flex flex-col items-center gap-6 ml-[-16] mt-12">
+        <nav className="flex flex-col items-center gap-6 ml-[-16] mt-12 ">
           <Link
             href={'/'}
-            className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
+            className="w-[82%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
             Início
@@ -59,7 +59,7 @@ export default function Hamburg() {
 
           <Link
             href="/sobre"
-            className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
+            className="w-[82%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
             Sobre
@@ -67,7 +67,7 @@ export default function Hamburg() {
 
           <Link
             href="/projetos"
-            className="w-[85%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
+            className="w-[82%] rounded-3xl rounded-s-none bg-[#fff8cd] px-4 py-2 text-black shadow-xl transition-all duration-300 hover:bg-[#fbe97d] hover:shadow-2xl"
             onClick={() => setOpen(false)}
           >
             Projetos
