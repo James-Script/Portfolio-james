@@ -53,7 +53,7 @@ export default function Header() {
 
           <Link
             href="/contato"
-            className="rounded-3xl bg-white px-6 py-2 text-center text-black transition-all duration-300 hover:bg-[#ff751f] hover:text-white"
+            className="rounded-3xl bg-white px-6 py-1 text-center text-black transition-all duration-300 hover:bg-[#ff751f] hover:text-white"
           >
             Contato
           </Link>

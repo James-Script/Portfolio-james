@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Projetos(){
     return(
         <>
-            <div>
+            <div className="text-black">
                 <h1>Pag Projetos</h1>
             </div>
         </>
