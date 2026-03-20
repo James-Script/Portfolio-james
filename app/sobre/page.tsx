@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link"
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Portfólio - Sobre",
@@ -10,9 +11,137 @@ export const metadata: Metadata = {
 export default function Sobre(){
     return(
         <>
-            <div className=" grid text-black justify-center-safe  mr-200 px-8 py-8 ">
-                <h1 className="text-[50px] text-shadow-lg/20 animate-pulse lg:text-5xl font-bold ">Sobre mim.</h1>
+            <div className=" grid md:grid-cols-[360px_1fr] w-full pt-[76px] md:px-20 max-w-[1080px] text-center md:text-left mx-auto">
+                <div className="text-white text-shadow-lg/40 text-3xl md:text-5xl font-bold">
+                    <h1 className=" md:text-[46px] ">Sobre mim</h1>
+                     <div className="grid w-full mt-10 text-[16px] leading-tight mb:px-12 md:px-0 sm:px-10 max-w-[1080px] text-center md:text-left mx-auto text-white">
+                    <p className="mb-10 font-semibold">
+                        <br></br>Sou desenvolvedor Front-End focado na criação de interfaces modernas, rápidas e responsivas.<br></br><br></br>
+Graduação de Análise e Desenvolvimento de Sistemas pela UNINASSAU e venho utilizando no desenvolvimento de aplicações web as stacks React, Next.js, TypeScript, Tailwind  CSS e Wordpress.
+                    </p>
+
                 </div>
+                </div>
+
+                <div className="text-[22px] md:justify-self-end font-semibold">
+                    <h1 className="justify-self-center">Tecnologias e Ferramentas:</h1>
+                    <div className="grid grid-cols-3 gap-4 bg-white text-black rounded-xl my-4 p-6 justify-self-center ">
+                    <div className="text-center">
+                    <h2 className="text-[16px] pb-2">Front-End</h2>
+                        <div className="">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/react-logo.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        
+                        <h3 className="font-normal text-[14px]">React</h3>
+                        </div>
+                    <div className="py-2">
+                        <Image className="justify-self-center py-[18px] w-auto h-auto"
+                           src="/nextjs.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Next.js</h3>
+                        </div>
+
+                          <div className="py-2">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/typescript.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Typescript</h3>
+                        </div>
+
+                          <div className="py-2">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/tailwindcss.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Tailwind.css</h3>
+                        </div>
+
+                </div>
+
+                <div className="text-center">
+                   <div>
+                    <h2 className="text-[16px] pb-2">Ferramentas</h2>
+                        <div className="">
+                        <Image className="justify-self-center w-auto h-auto"
+                        src="/vscode-logo.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">VSCode</h3>
+                    </div>
+
+                    
+
+                        <div className="py-2">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/git.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Git</h3>
+                    </div>
+
+                     <div className="py-2">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/figma.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Figma</h3>
+                    </div>
+
+                     <div className="py-2">
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/github.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        <h3 className="font-normal text-[14px]">Github</h3>
+                    </div>
+                </div>
+                </div>
+
+                <div className="text-center">
+                    <h2 className="text-[16px] pb-2">CMS</h2>
+                        <Image className="justify-self-center w-auto h-auto"
+                           src="/wordpress.png"
+                         alt="logo-react"
+                         width={42}
+                         height={70}>
+
+                        </Image>
+                        
+                        <h3 className="font-normal text-[14px]">Wordpress</h3>
+                </div>
+                
+                </div>
+                </div>
+                
+               </div> 
         </>
     )
 }
