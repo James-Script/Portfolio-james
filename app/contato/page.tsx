@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Portfólio - Contato",
@@ -10,9 +11,65 @@ export const metadata: Metadata = {
 export default function Contato(){
     return(
         <>
-            <div>
-                <h1 className="text-white">Page Contato</h1>
+            <div className="grid md:grid-cols-2 pt-[76px] md:px-20 max-w-[1080px] mx-auto justify-center">
+            <div className="grid w-full mx-auto">
+        <h1 className="text-5xl md:justify-self-start justify-self-center md:text-5xl font-bold text-white">
+          Contato
+        </h1>
+        <div>
+        <h2 className="flex text-xl px-20 pt-8 md:px-0 justify-self-center md:justify-self-start font-semibold">Email:</h2>
+        <p className="flex text-lg px-20  md:px-0 justify-self-start font-light text-white">
+            jamessonlucas01@gmail.com
+            </p>
+            <h2 className="flex text-xl px-20 md:px-0 pt-8 justify-self-start font-semibold">Redes Sociais:</h2>
+           
+            <div className="flex px-20 md:px-0 gap-4 mt-6 mb-8 ">
+                <Link href={`https://github.com/James-Script`}>
+             <Image
+            className="transition duration-300 ease-in-out invert brightness-0 contrast-200 hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl/40"
+            src="/github.png"
+            alt="Logo"
+            width={44}
+            height={44}>
+         </Image>   
+        </Link>
+
+               
+                <Link href={`https://www.linkedin.com/in/jamesson-lucas-78b594207/`}>
+                <Image
+                className="transition duration-300 ease-in-out invert brightness-0 contrast-200 hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl/40"
+                src="/linkedin.png"
+                alt="Logo"
+                width={44}
+                height={44}>
+         </Image>   
+        </Link>
+
+        <Link href={`https://www.instagram.com/james.marinh0/`}>
+        <Image
+        className="transition duration-300 ease-in-out invert brightness-0 contrast-200 hover:-translate-y-1 hover:scale-110 hover:drop-shadow-xl/40"
+        src="/instagram.png"
+        alt="Logo"
+        width={44}
+        height={44}>
+        </Image>   
+        </Link>
+
+         </div>
+          </div>
+      </div>
+
+        <div className="flex px-14 md:px-26">
+            <div className="bg-white md:h-100 h-80 rounded-[40px] border-[2px] border-gray-400">
+                <h2 className="justify-self-center text-black font-semibold py-4 text-xl">Entre em Contato</h2>
+                <form action=" " className="grid gap-4 px-6 py-4">
+                    <label htmlFor=""><input type="name" required className="rounded-xl border-[1px] transition duration-300 ease-in-out hover:border-[#FF751F] border-gray-400 text-black pl-4 placeholder:text-gray-500" placeholder="Nome"></input>
+                    </label>
+                    <input type="email" required className="rounded-xl border-[1px] border-gray-400 text-black placeholder:p-2 placeholder:text-gray-500"></input>
+                </form>
             </div>
+        </div>
+      </div>
         </>
     )
 }

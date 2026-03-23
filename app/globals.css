@@ -12,12 +12,18 @@
   --font-montserrat: var(--font-montserrat);
 }
 
+@theme{
+   --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.25);  
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: #000000;
     --foreground: #ffffff;
   }
 }
+
+
 
 body {
   background: var(--background);
