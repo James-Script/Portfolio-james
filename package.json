@@ -9,10 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-email/components": "^1.0.10",
+    "emailjs-com": "^3.2.0",
+    "inputmask": "^5.0.9",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-email": "^5.2.10",
+    "react-imask": "^7.6.1",
+    "react-input-mask": "3.0.0-alpha.2",
+    "resend": "^6.9.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
