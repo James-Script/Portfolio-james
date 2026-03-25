@@ -93,7 +93,7 @@ export default function Contato(){
         <div className="flex px-0 w-70 md:w-auto justify-self-center md:justify-self-end">
             <div className="bg-white w-100 h-110 rounded-[40px] border-[2px] border-gray-200">
                 <h2 className="justify-self-center text-black font-semibold py-4 text-xl">Entre em Contato</h2>
-                <form action={ContatoForm} className="grid gap-[8px] px-6 py-2">
+                <form action={async (formData) => { await ContatoForm(formData); setPhone("")}} className="grid gap-[8px] px-6 py-2">
                     <label htmlFor="" className=" text-black text-[14px]">Nome completo</label>
                     <input type="text" id="name" name="nome" autoComplete="on" required className="rounded-sm bg-[#F0F0F0] border-[1px] transition duration-300 ease-in-out hover:border-[#FF751F] border-gray-200 text-black pl-2 focus:outline-1 placeholder:text-gray-500 focus:outline-[#FF751F]" placeholder="Nome"></input>
                     
