@@ -9,9 +9,9 @@ export default function Header() {
     const pathname = usePathname();
 
   return (
-    <header className="w-full bg-black">
+    <header className="w-full  bg-black">
       <div className="mx-auto flex h-16 w-full max-w-[1080px] items-center justify-between px-4">
-        <Link href="/">
+        <Link href="/" className="z-99">
           <Image
             className="h-auto w-auto"
             src="/jl.png"

@@ -22,7 +22,7 @@ export default function Hamburg() {
   return (
     <>
       {/* botão */}
-      <div className="flex md:hidden justify-end w-full relative z-[70]">
+      <div className="flex md:hidden justify-end w-full relative z-[999]">
         <button onClick={() => setOpen(!open)} className="cursor-pointer mr-4">
           {open ? <X size={30} /> : <Menu size={30} />}
         </button>
