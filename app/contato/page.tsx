@@ -1,6 +1,5 @@
 'use client'
 
-import { IMaskInput } from "react-imask";
 import Link from "next/link";
 import Image from "next/image";
 import { ContatoForm } from "@/app/contato/action";
@@ -8,9 +7,9 @@ import { useState } from "react";
 
 export default function Contato(){
 
-    const [phone, setPhone] = useState("");
+    const [phone, setPhone] = useState<string>("");
 
-  function formatPhone(value) {
+  function formatPhone(value:string): string {
     value = value.replace(/\D/g, ""); // remove tudo que não é número
 
     if (value.length <= 10) {
@@ -26,7 +25,7 @@ export default function Contato(){
     return value;
   }
 
-  function handleChange(e) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement> ) {
     const formatted = formatPhone(e.target.value);
     setPhone(formatted);
   }

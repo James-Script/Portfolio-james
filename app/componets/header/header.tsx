@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import Hamburg from "./hamburg";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import Image from 'next/image';
+import Hamburg from './hamburg';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-    const pathname = usePathname();
+  const pathname = usePathname();
 
   return (
     <header className="w-full  bg-black">
@@ -26,26 +26,33 @@ export default function Header() {
             <Link
               href="/"
               className={`transition-all duration-300 border-b-2 py-3
-            ${pathname === "/"
-            ? "text-[#ff751f] border-[#ff751f]"
-                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+            ${
+              pathname === '/'
+                ? 'text-[#ff751f] border-[#ff751f]'
+                : 'text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]'
+            }`}
             >
               Início
             </Link>
             <Link
               href="/sobre"
               className={`transition-all duration-300 border-b-2 py-3
-            ${pathname === "/sobre" ? "text-[#ff751f] border-[#ff751f]" 
-                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+            ${
+              pathname === '/sobre'
+                ? 'text-[#ff751f] border-[#ff751f]'
+                : 'text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]'
+            }`}
             >
               Sobre
             </Link>
             <Link
               href="/projetos"
               className={`transition-all duration-300 border-b-2 py-3
-                ${pathname === "/projetos"
-                ? "text-[#ff751f] border-[#ff751f]"
-                : "text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]"}`}
+                ${
+                  pathname === '/projetos'
+                    ? 'text-[#ff751f] border-[#ff751f]'
+                    : 'text-white border-transparent hover:text-[#ff751f] hover:border-[#ff751f]'
+                }`}
             >
               Projetos
             </Link>
