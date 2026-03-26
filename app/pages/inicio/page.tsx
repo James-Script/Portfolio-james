@@ -19,9 +19,8 @@ export default function Inicio() {
             </div>
           </div>
           <div className="grid w-full py-4 md:py-10 justify-items-start text-[10px] md:text-sm leading-tight max-w-[1080px] text-left text-white">
-            <p className="font-semibold w-80 md:w-120">
-              Interfaces modernas, rápidas e responsivas, focadas em
-              performance, experiência do usuário e código bem estruturado.
+            <p className="font-semibold w-70 md:w-86">
+              Interfaces modernas, rápidas e responsivas, focadas em performance, experiência do usuário e código bem estruturado.
             </p>
 
             <p className="font-semibold text-[10px] md:text-sm py-4">
@@ -76,8 +75,8 @@ export default function Inicio() {
         </div>
 
         <div className=" md:relative">
-          <div className="absolute opacity-[0.6] md:opacity-90 inset-0 flex bg-[url('/image-james.jpg')] md:w-94 w-screen bg-center bg-cover md:h-100 sm:h-120 h-100 justify-self-center md:justify-self-end ">
-            <div className="absolute inset-0  md:bg-gradient-to-r bg-gradient-to-t from-black md:via-transparent via-black/50 md:to-black h-100 sm:h-122 to-transparent"></div>
+          <div className="absolute opacity-[0.6] md:opacity-90  inset-0 flex bg-[url('/image-james.jpg')] min-w-[200px] md:w-94 w-screen bg-center bg-cover md:h-100 sm:h-120 h-110 justify-self-center md:justify-self-end ">
+            <div className="absolute inset-0 md:ml-[-2px] md:mr-[-2px] md:bg-gradient-to-r bg-gradient-to-t from-black md:via-transparent via-black/50 md:to-black h-112 sm:h-122 to-transparent"></div>
           </div>
         </div>
       </div>
