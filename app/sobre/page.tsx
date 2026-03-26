@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 export default function Sobre() {
   return (
     <>
-      <div className=" grid md:grid-cols-[360px_1fr] w-full pt-[76px] md:px-20 max-w-[1080px] text-center md:text-left mx-auto">
+      <div className=" grid md:grid-cols-2 w-full pt-[76px] md:px-20 min-w-[100px] max-w-[1080px] text-center md:text-left mx-auto">
         <div className="text-white text-shadow-lg/40 text-3xl md:text-5xl font-bold">
           <h1 className=" md:text-[46px] ">Sobre mim</h1>
-          <div className="grid w-full mt-10 text-[16px] leading-tight mb:px-12 md:px-0 sm:px-10 max-w-[1080px] text-center md:text-left mx-auto text-white">
-            <p className="mb-10 font-semibold">
+          <div className="grid w-full mt-10 text-[16px] leading-tight  md:px-0 px-10  max-w-[1080px] text-center md:text-left  text-white">
+            <p className="mb-10 font-semibold px-10 md:pl-0 md:pr-10">
               <br></br>Sou desenvolvedor Front-End focado na criação de
               interfaces modernas, rápidas e responsivas.<br></br>
               <br></br>
@@ -25,7 +25,7 @@ export default function Sobre() {
           </div>
         </div>
 
-        <div className="text-[22px] md:justify-self-end font-semibold">
+        <div className="text-[22px] md:justify-self-end font-semibold min-w-[300px]">
           <h1 className="justify-self-center">Tecnologias e Ferramentas:</h1>
           <div className="grid grid-cols-3 gap-4 bg-white text-black rounded-xl my-4 p-6 justify-self-center ">
             <div className="text-center">
