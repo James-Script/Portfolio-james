@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Portfólio - Projetos',
@@ -15,26 +16,38 @@ export default function Projetos() {
         </h1>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 px-20 md:px-6  justify-center max-w-[1080px] py-10 mx-auto">
+      <div className="grid md:grid-cols-3 gap-8 px-20 md:px-6 justify-center max-w-[1080px] py-10 mx-auto">
         {/* CARD */}
-        <div className="bg-gradient-to-b from-[#F5F5F5] via-[#F2B47B] to-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300 ">
+        <div className="bg-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300 ">
           {/* IMAGEM */}
-          <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden ">
-            <img
-              src="/image-proj.png"
-              alt="Projeto"
-              className="w-full h-[140px] object-cover hover:scale-105 transition duration-300 cursor-pointer"
-            />
-          </div>
-
+          <Link href={`https://portfoliojamessonlucas.vercel.app/`}>
+            <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden ">
+              <Image
+                src="/preview-porfolio.png"
+                alt="Projeto"
+                width={1920}
+                height={1080}
+                className="w-full h-auto object-cover hover:scale-104 transition duration-300 cursor-pointer"
+              />
+            </div>
+          </Link>
           {/* TEXTO */}
           <div className="mt-2 px-4 text-left text-white">
             <p className="text-sm text-center leading-tight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              Projeto voltado ao meu portfólio para mostrar minhas habilidades
+              utilizando as ferramentas Next.js, React, Typescript e
+              Tailwind.css.
             </p>
           </div>
-          <div className="flex justify-center gap-4 px-6 pt-18 pb-4">
+          <div className="grid grid-cols-2 justify-self-center gap-4 pt-4 pb-4">
+            <Image
+              className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
+              src="/nextjs-icon.png"
+              alt="next"
+              width={42}
+              height={70}
+            ></Image>
+
             <Image
               className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
               src="/react-logo.png"
@@ -45,46 +58,72 @@ export default function Projetos() {
 
             <Image
               className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
-              src="/react-logo.png"
-              alt="logo-react"
+              src="/typescript.png"
+              alt="typescript"
+              width={42}
+              height={70}
+            ></Image>
+
+            <Image
+              className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
+              src="/tailwindcss.png"
+              alt="tailwdind"
               width={42}
               height={70}
             ></Image>
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-[#F5F5F5] via-[#F2B47B] to-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300">
-          <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden">
-            <img
-              src="/image-proj.png"
-              alt="Projeto"
-              className="w-full h-[140px] object-cover hover:scale-105 transition duration-300 cursor-pointer"
-            />
+        <div className="bg-[#F2B47B] rounded-3xl overflow-hidden hover:scale-104 transition duration-300">
+          <div className="bg-black shadow-xl rounded-b-none overflow-hidden aspect-video">
+            <Image
+                src="/projeto-calc.png"
+                alt="Projeto"
+                width={1920}
+                height={1080}
+                className="w-full h-auto object-cover object-center hover:scale-104 transition duration-300 cursor-pointer"
+              />
           </div>
           <div className="mt-2 px-4 text-left text-white">
             <p className="text-sm text-center leading-tight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              Projeto de uma calculadora com os conceitos básicos dela,
+              feita com as ferramentas Html5, Css3 e JavaScript.
             </p>
           </div>
-          <div className="flex justify-center gap-4 px-6 pb-4 pt-18">
+          <div className="grid grid-cols-2 justify-self-center gap-4 pt-4 pb-4">
             <Image
               className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
-              src="/react-logo.png"
-              alt="logo-react"
+              src="/html-icon.png"
+              alt="html"
+              width={42}
+              height={70}
+            ></Image>
+            <Image
+              className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
+              src="/css-icon.png"
+              alt="css"
+              width={42}
+              height={70}
+            ></Image>
+            <Image
+              className="cursor-pointer inset-shadow-sm inset-shadow-white hover:shadow-2xl/100 hover:bg-white transition duration-300 rounded-xl p-[4px] w-auto h-auto"
+              src="/javascript-icon.png"
+              alt="js"
               width={42}
               height={70}
             ></Image>
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-[#F5F5F5] via-[#F2B47B] to-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300">
+        <div className="bg-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300">
           <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden">
-            <img
-              src="/image-proj.png"
-              alt="Projeto"
-              className="w-full h-[140px] object-cover hover:scale-105 transition duration-300 cursor-pointer"
-            />
+            <Image
+                src="/preview-porfolio.png"
+                alt="Projeto"
+                width={1920}
+                height={1080}
+                className="w-full h-auto object-cover hover:scale-104 transition duration-300 cursor-pointer"
+              />
           </div>
           <div className="mt-2 px-4 text-left text-white">
             <p className="text-sm text-center leading-tight">
