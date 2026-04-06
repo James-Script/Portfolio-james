@@ -12,6 +12,11 @@ export async function ContatoForm(formData: FormData) {
   const email = formData.get('email');
   const mensagem = formData.get('mensagem');
 
+  console.log("Nome: ", (nomeFormatado));
+  console.log("Telefone: ", (tel));
+  console.log("Email: ", (email));
+  console.log("Mensagem: ", (mensagem));
+
   try {
     await resend.emails.send({
       from: `Contato | ${nomeFormatado} <onboarding@resend.dev>`,
