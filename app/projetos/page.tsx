@@ -20,7 +20,11 @@ export default function Projetos() {
         {/* CARD */}
         <div className="bg-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300 ">
           {/* IMAGEM */}
-          <Link href={`https://portfoliojamessonlucas.vercel.app/`}>
+          <Link
+            href={`https://portfoliojamessonlucas.vercel.app/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden ">
               <Image
                 src="/preview-porfolio.png"
@@ -75,19 +79,25 @@ export default function Projetos() {
         </div>
 
         <div className="bg-[#F2B47B] rounded-3xl overflow-hidden hover:scale-104 transition duration-300">
-          <div className="bg-black shadow-xl rounded-b-none overflow-hidden aspect-video">
-            <Image
+          <Link
+            href={`https://calculadorabasics.vercel.app/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-black shadow-xl rounded-b-none overflow-hidden aspect-video">
+              <Image
                 src="/projeto-calc.png"
                 alt="Projeto"
                 width={1920}
                 height={1080}
                 className="w-full h-auto object-cover object-center hover:scale-104 transition duration-300 cursor-pointer"
               />
-          </div>
+            </div>
+          </Link>
           <div className="mt-2 px-4 text-left text-white">
             <p className="text-sm text-center leading-tight">
-              Projeto de uma calculadora com os conceitos básicos dela,
-              feita com as ferramentas Html5, Css3 e JavaScript.
+              Projeto de uma calculadora com os conceitos básicos dela, feita
+              com as ferramentas Html5, Css3 e JavaScript.
             </p>
           </div>
           <div className="grid grid-cols-2 justify-self-center gap-4 pt-4 pb-4">
@@ -118,12 +128,12 @@ export default function Projetos() {
         <div className="bg-[#F2B47B] rounded-3xl hover:scale-105 transition duration-300">
           <div className="bg-white rounded-2xl shadow-xl rounded-b-none overflow-hidden">
             <Image
-                src="/preview-porfolio.png"
-                alt="Projeto"
-                width={1920}
-                height={1080}
-                className="w-full h-auto object-cover hover:scale-104 transition duration-300 cursor-pointer"
-              />
+              src="/preview-porfolio.png"
+              alt="Projeto"
+              width={1920}
+              height={1080}
+              className="w-full h-auto object-cover hover:scale-104 transition duration-300 cursor-pointer"
+            />
           </div>
           <div className="mt-2 px-4 text-left text-white">
             <p className="text-sm text-center leading-tight">
